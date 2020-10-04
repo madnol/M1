@@ -10,17 +10,17 @@ ASSIGNMENT RULES
 Write a function "area" which receives 2 parameters (l1,l2) and calculate the area of the rectangle.
 */
 
-const area = function (l1, l2) {
+/*const area = function (l1, l2) {
   return l1 * l2;
 };
 
-console.log(area(3, 4));
+console.log(area(3, 4));*/
 
 /* EXERCISE 2
 Write a function "crazySum" which receives two given integers. If the two values are same, then returns triple their sum.
 */
 
-let crazySum = (x, y) => {
+/*let crazySum = (x, y) => {
   if (x === y) {
     return (x + y) * 3;
   } else {
@@ -29,7 +29,7 @@ let crazySum = (x, y) => {
 };
 
 console.log(crazySum(5, 5));
-console.log(crazySum(3, 5));
+console.log(crazySum(3, 5));*/
 
 /* EXERCISE 3
 Write a function "crazyDiff" that computes the 
@@ -39,8 +39,6 @@ the specified
 number is greater than 19.
 */
 
-let y = 50;
-
 function crazyDiff(y) {
   if (y <= 19) {
     return y - 19;
@@ -49,7 +47,7 @@ function crazyDiff(y) {
   }
 }
 
-console.log(crazyDiff(y));
+console.log(crazyDiff(50));
 
 /* EXERCISE 4
 Write a function "boundary" which accept an integer N and returns true if N is within 20 and 100 (included) or equal to 400.
@@ -78,7 +76,15 @@ Write a function "check3and7" which accepts a positive number and check if it is
 HINT: Module Operator
 */
 
-function check3and7() {}
+function check3and7(x) {
+  if (Math.floor(parse.int(x)) % 7 === 0) {
+    return 'ok';
+  } else if (Math.floor(parse.int(x)) % 3 === 0) {
+    return 'ciao';
+  }
+}
+
+console.log(5);
 
 /* EXERCISE 7
 Write a function "reverseString" to reverse programmatically a given string (es.: Strive => evirtS).

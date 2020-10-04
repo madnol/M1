@@ -116,7 +116,7 @@ carsForRent.pop();*/
 Print in the console, the types of a single car, of the car licensePlate and of the brand
 */
 
-console.log(carsForRent);
+/*console.log(carsForRent);*/
 
 /* EXERCISE 12
 Create a new array called carsForSale and insert 3 cars in it.
