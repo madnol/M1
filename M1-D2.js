@@ -62,18 +62,15 @@ if (X === 5) {
 Insert a value in a variable based on the result of a ternary if
 */
 
-/*
-people
-
 let beer = 20;
-
+let people;
 if (beer > 18) {
   people = "It's drunk";
 } else {
   people = "It's ok";
 }
 
-console.log(people);*/
+console.log(people);
 
 /* WHEN YOU ARE FINISHED
 Send the code via Slack to the tutor! In the next days we'll also learn how to use GIT 
