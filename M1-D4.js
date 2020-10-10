@@ -10,17 +10,17 @@ ASSIGNMENT RULES
 Write a function "area" which receives 2 parameters (l1,l2) and calculate the area of the rectangle.
 */
 
-/*const area = function (l1, l2) {
+const area = function (l1, l2) {
   return l1 * l2;
 };
 
-console.log(area(3, 4));*/
+console.log(area(3, 4));
 
 /* EXERCISE 2
 Write a function "crazySum" which receives two given integers. If the two values are same, then returns triple their sum.
 */
 
-/*let crazySum = (x, y) => {
+let crazySum = (x, y) => {
   if (x === y) {
     return (x + y) * 3;
   } else {
@@ -29,7 +29,7 @@ Write a function "crazySum" which receives two given integers. If the two values
 };
 
 console.log(crazySum(5, 5));
-console.log(crazySum(3, 5));*/
+console.log(crazySum(3, 5));
 
 /* EXERCISE 3
 Write a function "crazyDiff" that computes the 
@@ -90,25 +90,36 @@ console.log(5);
 Write a function "reverseString" to reverse programmatically a given string (es.: Strive => evirtS).
 */
 
-/* WRITE YOUR CODE HERE */
+let reverseString = (revS) =>{
+  return revS.split("").reverse().join("");
+  
+};
 
+console.log(reverseString("Ciao"));
 /* EXERCISE 8
 Write a function "upperFirst" to capitalize the first letter of each word of a given string passed as parameter
 */
 
-/* WRITE YOUR CODE HERE */
-
+function upperFirst (x) {
+  
+return x[0].toUpperCase()+ x.substring(1);
+}
+console.log(upperFirst("hola"))
 /* EXERCISE 9
 Write a function "cutString" to create a new string without the first and last character of a given string.
 */
 
-/* WRITE YOUR CODE HERE */
+function cutString(x) {
+  return x.substring(1, x.length - 1);
+}
+
+console.log(cutString("Buongiorno"))
 
 /* EXERCISE 10
 Write a function "giveMeRandom" which accepts a number n and returns an array containing n random numbers between 0 and 10
 */
 
-const giveMeRandom0 = n => {
+const giveMeRandom0 = (n) => {
   let arrayN = [];
   for (i = 0; i <= n; i++) {
     arrayN.push(Math.floor(Math.random() * 10 + 0));

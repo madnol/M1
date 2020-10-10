@@ -105,7 +105,7 @@ let anstr = [];
 let array = nstr.split(' ');
 
 function OnlyLetters3() {
-  for (let i = 0; i < array.length; i++) {
+  for (let i = 0; i <= array.length; i++) {
     if (!array[i].match(/^[0-9]+$/)) {
       anstr.push(array[i]);
     }
